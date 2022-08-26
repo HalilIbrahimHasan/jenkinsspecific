@@ -22,29 +22,34 @@ public class LoginSteps {
     @Given("user navigates to sign in portal")
     public void user_navigates_to_sign_in_portal() {
 
-        Driver.waitAndClick(cp.signInAndRegistrationPortal);
+        //Driver.waitAndClick(cp.signInAndRegistrationPortal);
+         System.out.println("Hello");
+        System.out.println("Hello");
+        System.out.println("Hello");
+        System.out.println("Hello");
+        System.out.println("Hello");
     }
     @Given("user clicks on sign in button")
     public void user_clicks_on_sign_in_button() {
 
-        Driver.waitAndClick(cp.signIn);
+        //Driver.waitAndClick(cp.signIn);
     }
     @When("user provides the username as {string}")
     public void user_provides_the_username_as(String username) {
 
-        Driver.waitAndSendText(login.username, username);
+       // Driver.waitAndSendText(login.username, username);
     }
     @When("user provides the password as {string}")
     public void user_provides_the_password_as(String password) {
 
-        Driver.sleep(1000);
-        Driver.waitAndSendText(login.password, password);
+       // Driver.sleep(1000);
+       // Driver.waitAndSendText(login.password, password);
 
     }
 
 
     @Then("user clicks on login button")
     public void user_clicks_on_login_button() {
-      Driver.waitAndClick(login.loginButton);
+     // Driver.waitAndClick(login.loginButton);
     }
 }
