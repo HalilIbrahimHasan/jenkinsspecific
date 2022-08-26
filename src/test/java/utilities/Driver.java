@@ -45,7 +45,7 @@ public abstract class Driver {
                 case "chrome-headless":
 //                    WebDriverManager.chromedriver().setup();
 //                    driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
-                    WebDriverManager.chromedriver().setup();
+                    System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("headless");
                     options.addArguments("disable-gpu");
