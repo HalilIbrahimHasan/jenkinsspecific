@@ -23,7 +23,7 @@ public class Hooks {
 
     @Before(order=3, value="@UIregistration")
     public void beforeRegistration() {
-        Driver.getDriver().get("https://medunna.com/account/register");
+       // Driver.getDriver().get("https://medunna.com/account/register");
     }
 
 
